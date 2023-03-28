@@ -1066,7 +1066,7 @@ footer .bottom .right div .facebook {
 @media screen and (max-width: 1180px) {
   .sertificate {
     overflow: hidden;
-    height: 550px !important;
+    height: 665px !important;
   }
   .sertificate h2 {
     font-size: 18px !important;
@@ -1084,10 +1084,17 @@ footer .bottom .right div .facebook {
 }
 @media screen and (max-width: 880px) {
   .sertificate {
-    height: 660px !important;
+    height: 920px !important;
   }
   #nonn {
-    display: none !important;
+    border: none !important;
+    display: block !important;
+  }
+  #nonn::before {
+    content: "";
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
   .sertificate .wrapper {
     height: -webkit-max-content !important;
@@ -1111,7 +1118,7 @@ footer .bottom .right div .facebook {
     min-height: 270px !important;
   }
   .sertificate {
-    height: 550px !important;
+    min-height: 750px !important;
   }
   .sertificate h2 {
     margin-bottom: 0px !important;
@@ -1807,5 +1814,10 @@ footer .bottom .right div .facebook {
   #smaller {
     margin-top: 70px !important;
     max-height: 300px !important;
+  }
+}
+@media screen and (max-width: 446px) {
+  .sertificate .wrapper {
+    margin-top: 63px !important;
   }
 }/*# sourceMappingURL=style.css.map */
