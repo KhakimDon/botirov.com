@@ -40,7 +40,7 @@ window.onscroll = (e) => {
     if (flag) {
       int(210, jobsNumber, 15 );
       int(33, activesNumber, 65);
-      int(8, consults, 400);
+      int(6, consults, 400);
       flag = false;
     }
   } 
