@@ -26,7 +26,6 @@ header {
   max-width: 1920px;
   width: 100%;
   z-index: 9999;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   margin: auto;
@@ -149,7 +148,6 @@ main {
   font-weight: 400;
   -webkit-user-select: auto;
      -moz-user-select: auto;
-      -ms-user-select: auto;
           user-select: auto;
   font-size: 30px;
   line-height: 157.11%;
@@ -228,7 +226,6 @@ main {
 
 @media screen and (max-width: 1180px) {
   .actives {
-    height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
   }
@@ -354,7 +351,6 @@ main {
 @media screen and (max-width: 547px) {
   header .wrapper {
     padding: 0%;
-    width: -webkit-max-content !important;
     width: -moz-max-content !important;
     width: max-content !important;
   }
@@ -518,7 +514,6 @@ main {
   flex-direction: column;
   align-items: center;
   padding-top: 40px;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   padding-bottom: 146px;
@@ -889,7 +884,6 @@ footer .bottom .right div .facebook {
     transform: translateY(-120px);
   }
   .education {
-    height: -webkit-max-content !important;
     height: -moz-max-content !important;
     height: max-content !important;
   }
@@ -1126,7 +1120,6 @@ footer .bottom .right div .facebook {
     transform: translate(-50%, -50%);
   }
   .sertificate .wrapper {
-    height: -webkit-max-content !important;
     height: -moz-max-content !important;
     height: max-content !important;
     min-height: 400px !important;
@@ -1429,7 +1422,6 @@ footer .bottom .right div .facebook {
   position: absolute;
 }
 .about h2 {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   margin: auto;
@@ -1573,8 +1565,8 @@ footer .bottom .right div .facebook {
     height: 218px;
   }
   .about .wrapper .left .content .firstBio {
-    -o-object-position: center -125px;
-       object-position: center -125px;
+    -o-object-position: center -90px !important;
+       object-position: center -90px !important;
   }
   .about .wrapper .left .content .secondbio {
     -o-object-position: center -45px;
@@ -1654,14 +1646,16 @@ footer .bottom .right div .facebook {
     order: -1;
   }
   .about .wrapper2Active {
-    height: 460px;
+    height: 300px !important;
   }
+  
   .about .wrapper .right p {
     text-align: center;
   }
   .about .wrapper .left {
     margin-bottom: 40px;
   }
+  
 }
 @media screen and (max-width: 446px) {
   .numbers .items .num3 {
@@ -1791,20 +1785,15 @@ footer .bottom .right div .facebook {
   justify-content: center;
 }
 .preloader img {
-  -webkit-animation-name: anim;
-          animation-name: anim;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: anim;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 .preloader .preloaderpos {
   height: 200px;
   top: 100px;
-  -webkit-animation-name: none;
-          animation-name: none;
+  animation-name: none;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -1812,15 +1801,6 @@ footer .bottom .right div .facebook {
 
 .preloadernone {
   opacity: 0 !important;
-}
-
-@-webkit-keyframes anim {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(1turn);
-  }
 }
 
 @keyframes anim {
